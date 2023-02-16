@@ -7,6 +7,7 @@
 
 - https://github.com/webmasterdevlin/docker-compose-database
 - install docker client for your OS
+- Install Azure Data Studio
 - docker commands of each database are located on each Readme.md file
 
 ## Commands
