@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0387edc2-c098-44ae-b1ff-41f5f068a617" name="Changes" comment="">
+    <list default="true" id="0387edc2-c098-44ae-b1ff-41f5f068a617" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoftwareTesting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoftwareTesting/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DALIntegrationTests/appsettings.testing.json" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/appsettings.testing.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MachineSpecifications/A_Basics/When_authenticating_an_admin_user.cs" beforeDir="false" />
@@ -22,6 +22,7 @@
       <change beforePath="$PROJECT_DIR$/MachineSpecifications/SystemUnderTest/SampleService.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MachineSpecifications/SystemUnderTest/SampleToken.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MachineSpecifications/Usings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playwright.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Playwright/Playwright.csproj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Playwright/Program.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Playwright/Test.png" beforeDir="false" />
@@ -100,6 +101,15 @@
       <updated>1677223036335</updated>
       <workItem from="1677223037479" duration="1869000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <option name="closed" value="true" />
+      <created>1690897034915</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690897034915</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,5 +119,7 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
