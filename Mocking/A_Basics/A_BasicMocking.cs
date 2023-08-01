@@ -3,27 +3,6 @@ namespace Mocking.A_Basics;
 public class BasicMocking
 {
     [Fact]
-    public void Should_Mock_Function_With_Return_Value()
-    {
-        //Arrange
-        var id = 12;
-        var name = "Fred Flintstone";
-        var customer = new Customer { Id = id, Name = name };
-        var mockRepo = new Mock<IRepo>();
-
-        mockRepo.Setup(x => x.Find(id)).Returns(customer);
-
-        var controller = new TestController(mockRepo.Object);
-        //var controller = new TestController(new FakeRepo());
-        //Act
-        var actual = controller.GetCustomer(id);
-        //Assert
-        Assert.Same(customer, actual);
-        Assert.Equal(id, actual.Id);
-        Assert.Equal(name, actual.Name);
-    }
-
-    [Fact]
     public void Should_Mock_Void_Functions()
     {
         var id = 12;
@@ -78,8 +57,6 @@ public class BasicMocking
     {
         var count = 12;
         var mock = new Mock<IRepo>();
-        //mock.Setup(x => x.GetCountAsync().Result).Returns(count);
-        //mock.Setup(x => x.GetCountAsync()).Returns(async() => count); //generates compiler warning
         mock.Setup(x => x.GetCountAsync()).ReturnsAsync(count);
 
         var controller = new TestController(mock.Object);

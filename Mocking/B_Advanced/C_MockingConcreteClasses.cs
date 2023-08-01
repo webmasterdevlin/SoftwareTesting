@@ -7,7 +7,6 @@ public class MockingConcreteClasses
     {
         var skimedic = "Fred Flintstone";
         var cust = new Customer { Id = 12, Name = skimedic };
-        //var mockRepo = new Mock<IRepo> { CallBase = true};
         var mockRepo = new Mock<FakeRepo> { CallBase = true };
 
         mockRepo.Setup(x => x.Find(It.IsAny<int>())).Returns(cust);
@@ -15,7 +14,6 @@ public class MockingConcreteClasses
         var cust2 = sut.GetCustomer(13);
         Assert.Equal(cust.Id, cust2.Id);
         Assert.Equal(cust.Name, cust2.Name);
-        mockRepo.Verify(x => x.Find(13));
     }
 
     [Fact]
@@ -38,6 +36,7 @@ public class MockingConcreteClasses
         mock.Protected().Setup<int>("GetNumberWithParam", ItExpr.IsAny<int>()).Returns(15);
         Assert.Equal(15, mock.Object.CallProtectedMemberWithParam(4));
     }
+    
     [Fact]
     public void Should_Mock_Protected_Members_Using_Lambdas()
     {

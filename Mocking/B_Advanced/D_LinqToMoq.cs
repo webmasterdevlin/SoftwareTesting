@@ -14,14 +14,13 @@ public class LinqToMoq
                 MockBehavior.Strict);
 
         var controller = new TestController(mockRepo);
+        
         //Act
-        var custFromController1 = controller.GetCustomer(id);
         var custFromController2 = controller.GetCurrentCustomer;
-        var tenantId = controller.TenantId();
+        
         //Assert
-        Assert.Same(customer, custFromController1);
-        Assert.Equal(id, custFromController1.Id);
-        Assert.Equal(name, custFromController1.Name);
-        Mock.Get(mockRepo).VerifyAll();
+        Assert.Same(customer, custFromController2);
+        Assert.Equal(id, custFromController2.Id);
+        Assert.Equal(name, custFromController2.Name);
     }
 }

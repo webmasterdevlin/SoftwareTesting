@@ -1,6 +1,6 @@
 namespace Mocking.SystemsUnderTest.Classes;
 
-public class Address
+public abstract class Address
 {
     public virtual int Id { get; set; }
     public virtual int StreetNumber { get; set; }

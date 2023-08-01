@@ -2,9 +2,9 @@
 
 public class TestBusinessRulesUsingMock
 {
-    private Mock<IRepo> _mockRepo = new Mock<IRepo>(MockBehavior.Strict);
-    private Mock<IErrorHandler> _mockErrorHandler = new Mock<IErrorHandler>(MockBehavior.Strict);
-    private BetterExample _sut;
+    private readonly Mock<IRepo> _mockRepo = new(MockBehavior.Strict);
+    private readonly Mock<IErrorHandler> _mockErrorHandler = new(MockBehavior.Strict);
+    private readonly BetterExample _sut;
 
     public TestBusinessRulesUsingMock()
     {
@@ -42,8 +42,7 @@ public enum CharacterStatusEnum
     Father,
     Mother,
     Child,
-    Boss,
-    Unkown
+    Boss
 }
 
 public interface IErrorHandler
@@ -71,7 +70,6 @@ public class BetterExample
         catch (Exception ex)
         {
             _errorHandler.HandleIt();
-            //_errorHandler.HandleIt();
             throw;
         }
         switch (character.Name)

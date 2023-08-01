@@ -19,30 +19,21 @@ public class TestController
 
     public int TenantId() => _repo.TenantId;
     public void SetTenantId(int id) => _repo.TenantId = id;
-
-    public Customer GetCustomer(int id, string name) => _repo.Get(12, "Fred");
+    
     public Customer GetCurrentCustomer => _repo.CurrentCustomer;
     public Customer GetCustomer(int id)
     {
         try
         {
             id++;
-            //_repo.AddRecord(new Customer());
-            //var c = _repo.Find(id);
-            //return new Customer { Id = 12, Name = "Fred Flintstone" };
             return _repo.Find(id);
         }
         catch (Exception ex)
         {
-            if (_logger is not null)
-            {
-                _logger.Debug("There was an exception");
-            }
+            _logger?.Debug("There was an exception");
             throw;
         }
     }
-
-    public Address GetCustomersAddress(int id) => _repo.Find(id).AddressNavigation;
 
     public async Task<int> GetCustomerCountAsync() => await _repo.GetCountAsync();
 

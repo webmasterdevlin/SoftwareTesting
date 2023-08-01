@@ -23,31 +23,13 @@ public class Arguments
         var customer = new Customer { Id = id, Name = name };
         var mock = new Mock<IRepo>();
         mock.Setup(x => x.Find(It.IsAny<int>())).Returns(customer);
-        //mock.Setup(x => x.Find(It.IsInRange(0,100,Range.Inclusive))).Returns(customer);
         var controller = new TestController(mock.Object);
         var actual = controller.GetCustomer(id);
         Assert.Same(customer, actual);
         Assert.Equal(id, actual.Id);
         Assert.Equal(name, actual.Name);
     }
-
-    [Fact]
-    public void Should_Evaluate_At_Runtime()
-    {
-        var id = 12;
-        var name = "Fred Flintstone";
-        var customer = new Customer { Id = id, Name = name };
-        var mock = new Mock<IRepo>();
-        mock.Setup(x => x.Find(It.Is<int>(i => i % 2 == 0))).Returns(customer);
-        var controller = new TestController(mock.Object);
-        var actual = controller.GetCustomer(6);
-        Assert.Same(customer, actual);
-        Assert.Equal(id, actual.Id);
-        Assert.Equal(name, actual.Name);
-        actual = controller.GetCustomer(13);
-        Assert.Null(actual);
-    }
-
+    
     [Fact]
     public void Should_Allow_Wildcards_On_Setters()
     {

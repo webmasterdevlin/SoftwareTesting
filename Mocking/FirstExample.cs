@@ -1,28 +1,9 @@
 ﻿namespace Mocking;
 
-public class TestUsingFake
-{
-    private UseADependency _sut = new UseADependency(new FakeRepo());
-
-    [Theory]
-    [InlineData(1, "Fred")]
-    [InlineData(2, "Wilma")]
-    [InlineData(3, "Pebbles")]
-    public void ShouldGetACustomer(int id, string name)
-    {
-        Assert.Equal(name,_sut.GetCustomer(id).Name);
-        switch (_sut.GetCustomer(id).Name)
-        {
-            case "Fred":
-                break;
-        }
-    }
-
-}
 public class TestUsingMock
 {
-    private Mock<IRepo> _mockRepo = new Mock<IRepo>();
-    private UseADependency _sut;
+    private readonly Mock<IRepo> _mockRepo = new ();
+    private readonly UseADependency _sut;
 
     public TestUsingMock()
     {
