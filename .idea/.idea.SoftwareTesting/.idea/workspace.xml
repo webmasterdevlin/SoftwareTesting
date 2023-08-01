@@ -7,21 +7,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0387edc2-c098-44ae-b1ff-41f5f068a617" name="Changes" comment="" />
+    <list default="true" id="0387edc2-c098-44ae-b1ff-41f5f068a617" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SoftwareTesting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoftwareTesting/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/appsettings.testing.json" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/appsettings.testing.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineSpecifications/A_Basics/When_authenticating_an_admin_user.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineSpecifications/A_Basics/When_handling_exceptions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineSpecifications/B_Behaviors/AuthenticationBehaviors.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineSpecifications/B_Behaviors/When_using_behaviors.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineSpecifications/C_LifecycleOptions/CleanUpAfterEveryContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineSpecifications/C_LifecycleOptions/SetupTeardownAllContexts.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineSpecifications/Demo_When_Authenticating_An_Admin_User.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineSpecifications/Demo_When_Doing_The_Kessel_Run.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineSpecifications/MachineSpecifications.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineSpecifications/SystemUnderTest/SampleService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineSpecifications/SystemUnderTest/SampleToken.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineSpecifications/Usings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playwright/Playwright.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playwright/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playwright/Test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlaywrightTests/PlaywrightTests.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlaywrightTests/UserInterfaceTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlaywrightTests/Usings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SoftwareTesting.sln" beforeDir="false" afterPath="$PROJECT_DIR$/SoftwareTesting.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/XUnitExamples/Assertions/A_BasicAssertions/DateTimeOperations.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/XUnitExamples/Assertions/A_BasicAssertions/StringOperations.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2MAv7hP8ICPibmwgBys2Hi7TTvv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -35,6 +56,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   },

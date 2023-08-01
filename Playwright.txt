@@ -1,4 +1,0 @@
-Make sure Node.js and NPM are up-to-date
-https://nodejs.org/en/download
-Install Playwright
-npm install playwright
