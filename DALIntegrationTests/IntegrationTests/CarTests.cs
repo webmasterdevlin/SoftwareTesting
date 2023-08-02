@@ -39,6 +39,7 @@ public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture
         OutputHelper.WriteLine($"Query: {qs}");
         var cars = query.ToList();
         Assert.Equal(expectedCount, cars.Count);
+        cars.Count.Should().Be(expectedCount);
     }
 
     [Theory]
@@ -49,6 +50,7 @@ public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture
         OutputHelper.WriteLine($"Query: {qs}");
         var cars = _carRepo.GetAllBy(makeId).ToList();
         Assert.Equal(expectedCount, cars.Count);
+        cars.Count.Should().Be(expectedCount);
     }
 
     [Fact]
@@ -59,6 +61,7 @@ public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture
         OutputHelper.WriteLine($"Query: {qs}");
         var cars = query.ToList();
         Assert.Equal(10, cars.Count);
+        cars.Count.Should().Be(10);
     }
 
     [Fact]
@@ -79,6 +82,7 @@ public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture
             Context.SaveChanges();
             var newCarCount = Context.Cars.Count();
             Assert.Equal(carCount + 1, newCarCount);
+            newCarCount.Should().Be(carCount + 1);
         }
     }
 
@@ -91,13 +95,16 @@ public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture
         {
             var car = Context.Cars.First(c => c.Id == 1);
             Assert.Equal("Black", car.Color);
+            car.Color.Should().Be("Black");
             car.Color = "White";
             Context.SaveChanges();
             Context.ChangeTracker.Clear();
             Assert.Equal("White", car.Color);
+            car.Color.Should().Be("White");
             var context2 = TestHelpers.GetSecondContext(Context, trans);
             var car2 = context2.Cars.First(c => c.Id == 1);
             Assert.Equal("White", car2.Color);
+            car2.Color.Should().Be("White");
         }
     }
 
@@ -115,6 +122,8 @@ public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture
             var newCarCount = Context.Cars.Count();
             Assert.Equal(carCount - 1, newCarCount);
             Assert.Equal(EntityState.Detached, Context.Entry(car).State);
+            newCarCount.Should().Be(carCount - 1);
+            Context.Entry(car).State.Should().Be(EntityState.Detached);
         }
     }
     [Fact]
@@ -131,6 +140,8 @@ public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture
             //update the car record in the change tracker
             car.Color = "Yellow";
             var ex = Assert.Throws<CustomConcurrencyException>(() => Context.SaveChanges());
+            Action act = () => Context.SaveChanges();
+            act.Should().Throw<CustomConcurrencyException>().And.InnerException.Should().BeOfType<DbUpdateConcurrencyException>();
             var entry = ((DbUpdateConcurrencyException)ex.InnerException)?.Entries[0];
             PropertyValues originalProps = entry.OriginalValues;
             PropertyValues currentProps = entry.CurrentValues;
@@ -138,6 +149,4 @@ public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture
             PropertyValues databaseProps = entry.GetDatabaseValues();
         }
     }
-
-
 }

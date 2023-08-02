@@ -13,6 +13,7 @@ public class Arguments
         var controller = new TestController(mock.Object);
         var actual = controller.GetCustomer(id);
         Assert.Null(actual);
+        actual.Should().BeNull();
     }
 
     [Fact]
@@ -28,6 +29,9 @@ public class Arguments
         Assert.Same(customer, actual);
         Assert.Equal(id, actual.Id);
         Assert.Equal(name, actual.Name);
+        actual.Should().BeSameAs(customer);
+        actual.Id.Should().Be(id);
+        actual.Name.Should().Be(name);
     }
     
     [Fact]

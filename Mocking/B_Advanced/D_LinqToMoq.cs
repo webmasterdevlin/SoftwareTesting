@@ -22,5 +22,8 @@ public class LinqToMoq
         Assert.Same(customer, custFromController2);
         Assert.Equal(id, custFromController2.Id);
         Assert.Equal(name, custFromController2.Name);
+        custFromController2.Should().BeSameAs(customer);
+        custFromController2.Id.Should().Be(id);
+        custFromController2.Name.Should().Be(name);
     }
 }

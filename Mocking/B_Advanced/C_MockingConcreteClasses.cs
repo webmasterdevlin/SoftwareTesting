@@ -14,6 +14,8 @@ public class MockingConcreteClasses
         var cust2 = sut.GetCustomer(13);
         Assert.Equal(cust.Id, cust2.Id);
         Assert.Equal(cust.Name, cust2.Name);
+        cust2.Id.Should().Be(cust.Id);
+        cust2.Name.Should().Be(cust.Name);
     }
 
     [Fact]
@@ -25,6 +27,7 @@ public class MockingConcreteClasses
         mock.Setup(x => x.CurrentCustomer.Name).Returns(name);
         var controller = new TestController(mock.Object);
         Assert.Equal(name, controller.GetCurrentCustomer.Name);
+        controller.GetCurrentCustomer.Name.Should().Be(name);
     }
 
     [Fact]
@@ -33,8 +36,10 @@ public class MockingConcreteClasses
         var mock = new Mock<FakeRepo>();
         mock.Protected().Setup<int>("GetNumber").Returns(12);
         Assert.Equal(12, mock.Object.CallProtectedMember());
+        mock.Object.CallProtectedMember().Should().Be(12);
         mock.Protected().Setup<int>("GetNumberWithParam", ItExpr.IsAny<int>()).Returns(15);
         Assert.Equal(15, mock.Object.CallProtectedMemberWithParam(4));
+        mock.Object.CallProtectedMemberWithParam(4).Should().Be(15);
     }
     
     [Fact]
@@ -44,7 +49,9 @@ public class MockingConcreteClasses
         var mock = new Mock<FakeRepo>();
         mock.Protected().As<FakeMockInterface>().Setup(m => m.GetNumber()).Returns(12);
         Assert.Equal(12, mock.Object.CallProtectedMember());
+        mock.Object.CallProtectedMember().Should().Be(12);
         mock.Protected().As<FakeMockInterface>().Setup(m => m.GetNumberWithParam(It.IsAny<int>())).Returns(15);
         Assert.Equal(15, mock.Object.CallProtectedMemberWithParam(4));
+        mock.Object.CallProtectedMemberWithParam(4).Should().Be(15);
     }
 }

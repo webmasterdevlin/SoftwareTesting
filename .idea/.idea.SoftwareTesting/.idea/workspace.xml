@@ -10,17 +10,19 @@
     <list default="true" id="0387edc2-c098-44ae-b1ff-41f5f068a617" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoftwareTesting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoftwareTesting/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DALIntegrationTests/DALIntegrationTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/DALIntegrationTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/IntegrationTests/CarTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/IntegrationTests/CarTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/Usings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/Usings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALSample/DALSample.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DALSample/DALSample.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALSample/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/DALSample/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mocking/A_Basics/A_BasicMocking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/A_Basics/A_BasicMocking.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mocking/A_Basics/B_Properties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/A_Basics/B_Properties.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mocking/A_Basics/C_Verification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/A_Basics/C_Verification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mocking/A_Basics/D_Exceptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/A_Basics/D_Exceptions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mocking/A_Basics/E_Arguments.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/A_Basics/E_Arguments.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mocking/A_Basics/F_MultipleCalls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/A_Basics/F_MultipleCalls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mocking/B_Advanced/C_MockingConcreteClasses.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/B_Advanced/C_MockingConcreteClasses.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mocking/B_Advanced/D_LinqToMoq.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/B_Advanced/D_LinqToMoq.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mocking/Mocking.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/Mocking.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XUnitExamples/Assertions/A_BasicAssertions/DateTimeOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/XUnitExamples/Assertions/A_BasicAssertions/DateTimeOperations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XUnitExamples/Assertions/A_BasicAssertions/StringOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/XUnitExamples/Assertions/A_BasicAssertions/StringOperations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XUnitExamples/Assertions/C_CollectionAssertions/CollectionOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/XUnitExamples/Assertions/C_CollectionAssertions/CollectionOperations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XUnitExamples/Base/BaseTestClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/XUnitExamples/Base/BaseTestClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XUnitExamples/FirstExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/XUnitExamples/FirstExample.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XUnitExamples/MyFirstTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/XUnitExamples/MyFirstTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XUnitExamples/Theories/ClassDataTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/XUnitExamples/Theories/ClassDataTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XUnitExamples/Theories/MemberDataTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/XUnitExamples/Theories/MemberDataTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XUnitExamples/Theories/TestDataClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/XUnitExamples/Theories/TestDataClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XUnitExamples/XUnitExamples.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/XUnitExamples/XUnitExamples.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +33,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/DALIntegrationTests/IntegrationTests/CarTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/A_BasicMocking.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/B_Properties.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/C_Verification.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/D_Exceptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/F_MultipleCalls.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/999ae9cc4ab7b7cfbc5080803e994426e97fd9d87c5b1f44544a799bc114/StringAsserts.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -85,7 +92,8 @@
       <workItem from="1690958196900" duration="6000" />
       <workItem from="1690962672112" duration="573000" />
       <workItem from="1690963714970" duration="1962000" />
-      <workItem from="1690966309627" duration="1943000" />
+      <workItem from="1690966309627" duration="5001000" />
+      <workItem from="1690977187370" duration="4599000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -119,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690963175562</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <option name="closed" value="true" />
+      <created>1690968361377</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690968361377</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -20,12 +20,19 @@ public class MultipleCalls
         Assert.Same(customer1, actual);
         Assert.Equal(id1, actual.Id);
         Assert.Equal(name1, actual.Name);
+        actual.Should().BeSameAs(customer1);
+        actual.Id.Should().Be(id1);
+        actual.Name.Should().Be(name1);
         actual = controller.GetCustomer(id2);
         Assert.Same(customer2, actual);
         Assert.Equal(id2, actual.Id);
         Assert.Equal(name2, actual.Name);
+        actual.Should().BeSameAs(customer2);
+        actual.Id.Should().Be(id2);
+        actual.Name.Should().Be(name2);
         actual = controller.GetCustomer(id2);
         Assert.Null(actual);
+        actual.Should().BeNull();
         mock.Verify(x => x.Find(It.IsAny<int>()), Times.Exactly(3));
     }
 }

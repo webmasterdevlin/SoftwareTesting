@@ -13,6 +13,9 @@ public class Verification
         //Throws exception since method wasn't called
         var ex = Assert.Throws<MockException>(() => mock.VerifyAll());
         Assert.Contains("This setup was not matched.", ex.Message);
+        
+        Action act = () => mock.VerifyAll();
+        act.Should().Throw<MockException>().WithMessage("*This setup was not matched.*");
     }
 
     [Fact]
@@ -25,7 +28,11 @@ public class Verification
         Expression<Func<IRepo, Customer>> call = x => x.Find(id);
         var errorMessage = "Method not called";
         mock.Setup(call).Returns(customer).Verifiable(errorMessage);
+        
         Assert.Throws<MockException>(() => mock.Verify(call));
+        
+        Action act = () => mock.Verify(call);
+        act.Should().Throw<MockException>();
     }
 
     [Fact]

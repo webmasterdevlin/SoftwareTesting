@@ -1,4 +1,8 @@
 # Automated Software Testing with .NET Core and EF Core
+- xUnit
+- Moq
+- Fluent Assertions
+- EF Core SQL Server Database
 
 ## Installing MS SQL Server Database using Docker
 

@@ -34,6 +34,8 @@ public class BasicMocking
         var mock = new Mock<IRepo>(MockBehavior.Strict);
         var controller = new TestController(mock.Object);
         Assert.Throws<MockException>(() => controller.SaveCustomer(customer));
+        Action act = () => controller.SaveCustomer(customer);
+        act.Should().Throw<MockException>();
     }
 
     [Fact]
@@ -50,6 +52,9 @@ public class BasicMocking
         Assert.Same(customer, actual);
         Assert.Equal(id, actual.Id);
         Assert.Equal(name, actual.Name);
+        actual.Should().BeSameAs(customer);
+        actual.Id.Should().Be(id);
+        actual.Name.Should().Be(name);
     }
 
     [Fact]
@@ -62,5 +67,6 @@ public class BasicMocking
         var controller = new TestController(mock.Object);
         var result = await controller.GetCustomerCountAsync();
         Assert.Equal(count, result);
+        result.Should().Be(count);
     }
 }
