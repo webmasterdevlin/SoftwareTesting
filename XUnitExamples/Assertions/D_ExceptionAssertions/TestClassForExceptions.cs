@@ -33,9 +33,9 @@ public class TestClassForExceptions
 
     public IEnumerable<int> Power(int number, int exponent)
     {
-        int result = 1;
+        var result = 1;
 
-        for (int i = 0; i < exponent; i++)
+        for (var i = 0; i < exponent; i++)
         {
             if (i == 2)
             {

@@ -12,7 +12,10 @@ public class MyFirstTests
         //act
         var sum = addend1 + addend2;
 
-        //assert
-        Assert.Equal(5, addend1 + addend2);
+        // assert
+        // xUnit assertions
+        Assert.Equal(5, sum);
+        // FluentAssertions
+        sum.Should().Be(5);
     }
 }

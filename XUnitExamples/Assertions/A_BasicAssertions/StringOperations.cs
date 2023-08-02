@@ -102,6 +102,7 @@ public class StringOperations
     }
 
     [Theory]
+    // regex that matches email addresses
     [InlineData("foo@foo.com",
         "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")]
     public void RegularExpressionAssertions(string email, string regexPattern)

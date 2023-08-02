@@ -8,10 +8,16 @@ public class DateTimeOperations
         var date1 = new DateTime(2022, 06, 01, 12, 0, 0);
         var date2 = new DateTime(2022, 06, 01, 12, 0, 30);
 
-        //Compare date values exactly
+        // Compare date values exactly
+        // xUnit assertions
         Assert.NotEqual(date1, date2);
-        //Use a timespan to allow for precision
+        // fluent assertions
+        date1.Should().NotBe(date2);
+        // Use a timespan to allow for precision
+        // xUnit assertions
         Assert.Equal(date1, date2, TimeSpan.FromSeconds(30));
+        // fluent assertions
+        date1.Should().BeCloseTo(date2, TimeSpan.FromSeconds(30));
     }
 
     [Fact]
@@ -22,9 +28,6 @@ public class DateTimeOperations
 
         theDatetime.Should().BeLessThan(10.Minutes()).Before(otherDatetime); // Equivalent to <
         otherDatetime.Should().BeWithin(2.Hours()).After(theDatetime);       // Equivalent to <=
-        //theDatetime.Should().BeMoreThan(1.Days()).Before(otherDatetime);          // Equivalent to >
-        //theDatetime.Should().BeAtLeast(2.Days()).Before(otherDatetime);       // Equivalent to >=
-        //theDatetime.Should().BeExactly(24.Hours()).Before(otherDatetime);      // Equivalent to ==
     }
 
     [Fact]

@@ -1,7 +1,6 @@
 namespace XUnitExamples.Theories;
 
 public class TestDataClass : IEnumerable<object[]>
-
 {
     private readonly List<object[]> _data = new()
     {

@@ -30,7 +30,6 @@ public class MemberDataTests : BaseTestClass
     public void ShouldReturnProperValueUsingRecords(RecordForTestData data)
     {
         TestOutputWriter.WriteLine($"{data.Input}:{data.ExpectedResult}");
-
     }
 
     public static IEnumerable<object[]> TestDataWithObjects

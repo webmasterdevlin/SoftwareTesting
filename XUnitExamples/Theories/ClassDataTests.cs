@@ -7,7 +7,7 @@ public class ClassDataTests : BaseTestClass
     }
 
 
-    [Theory]
+    [Theory] // the definition of theory is that it is a test that is executed multiple times with different data
     [ClassData(typeof(TestDataClass))]
     public void ShouldReturnProperValue(RecordForTestData data)
     {

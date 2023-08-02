@@ -1,17 +1,5 @@
 ﻿namespace XUnitExamples;
 
-/*
-Put all test classes into a single test collection by default:
-  [assembly: CollectionBehavior(CollectionBehavior.CollectionPerAssembly)]
-Default: CollectionBehavior.CollectionPerClass
-Set the maximum number of threads to use when running test in parallel:
-  [assembly: CollectionBehavior(MaxParallelThreads = n)]
-Default: number of virtual CPUs in the PC
-Turn off parallelism inside the assembly:
-  [assembly: CollectionBehavior(DisableTestParallelization = true)]
-Default: false
-*/
-
 //Tests in a class or a collection are run in serial
 //Tests in different classes or different collections are run in parallel
 [Collection("MyTests")]
