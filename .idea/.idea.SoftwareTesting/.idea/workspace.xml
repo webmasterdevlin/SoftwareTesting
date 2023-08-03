@@ -8,11 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0387edc2-c098-44ae-b1ff-41f5f068a617" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.zshrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoftwareTesting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoftwareTesting/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DALIntegrationTests/Base/BaseTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/Base/BaseTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/Base/EnsureAutoLotDatabaseTestFixture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/Base/EnsureAutoLotDatabaseTestFixture.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/TestHelpers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/TestHelpers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mocking/SystemsUnderTest/TestController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/SystemsUnderTest/TestController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/Base/EnsureAutoLotDatabaseTestFixture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/Base/EnsureAutoLoadDatabaseTestFixture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/IntegrationTests/CarTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/IntegrationTests/CarTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/Usings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/Usings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALSample/Usings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALSample/Usings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mocking/B_Advanced/C_MockingConcreteClasses.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/B_Advanced/C_MockingConcreteClasses.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mocking/SystemsUnderTest/Interfaces/FakeMockInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/SystemsUnderTest/Interfaces/IFakeMockInterface.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mocking/Usings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/Usings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XUnitExamples/Assertions/D_ExceptionAssertions/FluentExceptionOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/XUnitExamples/Assertions/D_ExceptionAssertions/FluentExceptionOperations.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,23 +29,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/DALIntegrationTests/IntegrationTests/CarTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/A_BasicMocking.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/A_BasicMocking.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/B_Properties.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/C_Verification.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/D_Exceptions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/F_MultipleCalls.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/999ae9cc4ab7b7cfbc5080803e994426e97fd9d87c5b1f44544a799bc114/StringAsserts.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/10616addb6e783cc90acec53f9316ccec363cf7a57b27055a964beafd4b32d95/ArgumentNullException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d08cf4fe6c8616dab4c140d3a928b5d120d4119319ee4f2c28285d654ca607a/EntityEntry.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2MAv7hP8ICPibmwgBys2Hi7TTvv" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -52,6 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -89,7 +90,8 @@
       <workItem from="1690963714970" duration="1962000" />
       <workItem from="1690966309627" duration="5001000" />
       <workItem from="1690977187370" duration="4619000" />
-      <workItem from="1691046542646" duration="4897000" />
+      <workItem from="1691046542646" duration="5564000" />
+      <workItem from="1691062284437" duration="2156000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -139,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690983980914</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update">
+      <option name="closed" value="true" />
+      <created>1691052940356</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691052940356</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +158,7 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />

@@ -4,9 +4,9 @@ namespace DALIntegrationTests.Base;
 /// It's designed to ensure that the database is in a known state before tests are run, which is a common requirement for integration tests that interact with a database.
 /// By clearing and reseeding the database at the start of the tests, it ensures that the tests are consistent and repeatable.
 /// </summary>
-public sealed class EnsureAutoLotDatabaseTestFixture : IDisposable
+public sealed class EnsureAutoLoadDatabaseTestFixture : IDisposable
 {
-    public EnsureAutoLotDatabaseTestFixture()
+    public EnsureAutoLoadDatabaseTestFixture()
     {
         // Configuration Retrieval: It calls the static GetConfiguration method from the TestHelpers class to retrieve the application's configuration settings.
         var configuration = TestHelpers.GetConfiguration();

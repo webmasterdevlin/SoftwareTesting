@@ -38,9 +38,11 @@ public abstract class BaseTest : IDisposable
         var strategy = Context.Database.CreateExecutionStrategy();
         strategy.Execute(() =>
         {
-            using var trans = Context.Database.BeginTransaction();
-            actionToExecute();
-            trans.Rollback();
+            using (var trans = Context.Database.BeginTransaction())
+            {
+                actionToExecute();
+                trans.Rollback();
+            }
         });
     }
     

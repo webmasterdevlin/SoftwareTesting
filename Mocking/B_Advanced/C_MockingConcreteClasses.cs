@@ -47,10 +47,10 @@ public class MockingConcreteClasses
     {
         //FakeMockInterface gives us intellisense
         var mock = new Mock<FakeRepo>();
-        mock.Protected().As<FakeMockInterface>().Setup(m => m.GetNumber()).Returns(12);
+        mock.Protected().As<IFakeMockInterface>().Setup(m => m.GetNumber()).Returns(12);
         Assert.Equal(12, mock.Object.CallProtectedMember());
         mock.Object.CallProtectedMember().Should().Be(12);
-        mock.Protected().As<FakeMockInterface>().Setup(m => m.GetNumberWithParam(It.IsAny<int>())).Returns(15);
+        mock.Protected().As<IFakeMockInterface>().Setup(m => m.GetNumberWithParam(It.IsAny<int>())).Returns(15);
         Assert.Equal(15, mock.Object.CallProtectedMemberWithParam(4));
         mock.Object.CallProtectedMemberWithParam(4).Should().Be(15);
     }

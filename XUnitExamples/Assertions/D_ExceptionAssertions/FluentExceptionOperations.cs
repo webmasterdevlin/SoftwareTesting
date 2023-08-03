@@ -39,7 +39,7 @@ public class FluentExceptionOperations
             .WithMessage("Must build");
 
 
-        //Wilcard specifier	Matches
+        //Wildcard specifier	Matches
         //* (asterisk)	Zero or more characters in that position.
         //? (question mark)	Exactly one character in that position.
 
@@ -67,7 +67,7 @@ public class FluentExceptionOperations
 
     }
     [Fact]
-    public async Task AsyncFluentExceptionHandling()
+    public async Task AsyncFluentExceptionHandlingAsync()
     {
         var sut = new TestClassForExceptions();
         Func<Task> act = () => sut.ThrowBadParamExceptionActionAsync("hello");

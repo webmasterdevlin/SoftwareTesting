@@ -1,7 +1,7 @@
 ﻿namespace DALIntegrationTests.IntegrationTests;
 
 [Collection("Integration Tests")]
-public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture>
+public class CarTests : BaseTest, IClassFixture<EnsureAutoLoadDatabaseTestFixture>
 {
     private readonly ICarRepo _carRepo;
     public CarTests(ITestOutputHelper outputHelper) : base(outputHelper)
@@ -34,12 +34,13 @@ public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture
     [InlineData(6, 1)]
     public void ShouldGetTheCarsByMake(int makeId, int expectedCount)
     {
+        // IgnoreQueryFilters is a query that includes the soft-deleted records
         IQueryable<Car> query = Context.Cars.IgnoreQueryFilters().Where(x => x.MakeId == makeId);
         var qs = query.ToQueryString();
         OutputHelper.WriteLine($"Query: {qs}");
-        var cars = query.ToList();
-        Assert.Equal(expectedCount, cars.Count);
-        cars.Count.Should().Be(expectedCount);
+        var carsCount = query.Count();
+        Assert.Equal(expectedCount, carsCount);
+        carsCount.Should().Be(expectedCount);
     }
 
     [Theory]
@@ -59,9 +60,9 @@ public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture
         IIncludableQueryable<Car, Make> query = Context.Cars.Include(c => c.MakeNavigation);
         var qs = query.ToQueryString();
         OutputHelper.WriteLine($"Query: {qs}");
-        var cars = query.ToList();
-        Assert.Equal(10, cars.Count);
-        cars.Count.Should().Be(10);
+        var carsCount = query.Count();
+        Assert.Equal(10, carsCount);
+        carsCount.Should().Be(10);
     }
 
     [Fact]
@@ -133,7 +134,7 @@ public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture
 
         void RunTheTest()
         {
-            //Get a car record (doesn’t matter which one)
+            //Get a car record (does not matter which one)
             var car = Context.Cars.First();
             //Update the database outside of the context
             Context.Database.ExecuteSqlInterpolated($"Update dbo.Inventory set Color='Pink' where Id = {car.Id}");
@@ -142,11 +143,6 @@ public class CarTests : BaseTest, IClassFixture<EnsureAutoLotDatabaseTestFixture
             var ex = Assert.Throws<CustomConcurrencyException>(() => Context.SaveChanges());
             Action act = () => Context.SaveChanges();
             act.Should().Throw<CustomConcurrencyException>().And.InnerException.Should().BeOfType<DbUpdateConcurrencyException>();
-            var entry = ((DbUpdateConcurrencyException)ex.InnerException)?.Entries[0];
-            PropertyValues originalProps = entry.OriginalValues;
-            PropertyValues currentProps = entry.CurrentValues;
-            //This needs another database call
-            PropertyValues databaseProps = entry.GetDatabaseValues();
         }
     }
 }
