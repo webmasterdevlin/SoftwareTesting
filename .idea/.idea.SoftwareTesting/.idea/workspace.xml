@@ -9,20 +9,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0387edc2-c098-44ae-b1ff-41f5f068a617" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoftwareTesting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoftwareTesting/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/DALIntegrationTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/DALIntegrationTests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/IntegrationTests/CarTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/IntegrationTests/CarTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/Usings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/Usings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DALSample/DALSample.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DALSample/DALSample.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DALSample/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/DALSample/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mocking/A_Basics/A_BasicMocking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/A_Basics/A_BasicMocking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mocking/A_Basics/B_Properties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/A_Basics/B_Properties.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mocking/A_Basics/C_Verification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/A_Basics/C_Verification.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mocking/A_Basics/D_Exceptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/A_Basics/D_Exceptions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mocking/A_Basics/E_Arguments.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/A_Basics/E_Arguments.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mocking/A_Basics/F_MultipleCalls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/A_Basics/F_MultipleCalls.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mocking/B_Advanced/C_MockingConcreteClasses.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/B_Advanced/C_MockingConcreteClasses.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mocking/B_Advanced/D_LinqToMoq.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/B_Advanced/D_LinqToMoq.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mocking/Mocking.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/Mocking.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/Base/BaseTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/Base/BaseTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/Base/EnsureAutoLotDatabaseTestFixture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/Base/EnsureAutoLotDatabaseTestFixture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/TestHelpers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/TestHelpers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mocking/SystemsUnderTest/TestController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/SystemsUnderTest/TestController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +25,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/DALIntegrationTests/IntegrationTests/CarTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/A_BasicMocking.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/A_BasicMocking.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/B_Properties.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/C_Verification.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/inmetadeveloper/Documents/DEVELOPMENT/ASP.NET/SoftwareTesting/Mocking/A_Basics/D_Exceptions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -45,6 +36,10 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
   <component name="ProjectId" id="2MAv7hP8ICPibmwgBys2Hi7TTvv" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,29 +50,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/inmetadeveloper/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/inmetadeveloper/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
-      &quot;/Users/inmetadeveloper/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/inmetadeveloper/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
+      "/Users/inmetadeveloper/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
+      "/Users/inmetadeveloper/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -93,7 +88,8 @@
       <workItem from="1690962672112" duration="573000" />
       <workItem from="1690963714970" duration="1962000" />
       <workItem from="1690966309627" duration="5001000" />
-      <workItem from="1690977187370" duration="4599000" />
+      <workItem from="1690977187370" duration="4619000" />
+      <workItem from="1691046542646" duration="4897000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -135,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690968361377</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update">
+      <option name="closed" value="true" />
+      <created>1690983980914</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690983980914</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
