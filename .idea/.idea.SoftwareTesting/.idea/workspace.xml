@@ -8,17 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0387edc2-c098-44ae-b1ff-41f5f068a617" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.zshrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SoftwareTesting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SoftwareTesting/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/Base/BaseTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/Base/BaseTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/Base/EnsureAutoLotDatabaseTestFixture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/Base/EnsureAutoLoadDatabaseTestFixture.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/IntegrationTests/CarTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/IntegrationTests/CarTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DALIntegrationTests/Usings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALIntegrationTests/Usings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DALSample/Usings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALSample/Usings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mocking/B_Advanced/C_MockingConcreteClasses.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/B_Advanced/C_MockingConcreteClasses.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mocking/SystemsUnderTest/Interfaces/FakeMockInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/SystemsUnderTest/Interfaces/IFakeMockInterface.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mocking/Usings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mocking/Usings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XUnitExamples/Assertions/D_ExceptionAssertions/FluentExceptionOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/XUnitExamples/Assertions/D_ExceptionAssertions/FluentExceptionOperations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALSample/EfStructures/ApplicationDbContextFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALSample/Repos/Base/BaseViewRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALSample/Repos/Base/BaseViewRepo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DALSample/Repos/Base/IBaseViewRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DALSample/Repos/Base/IBaseViewRepo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XUnitExamples/Base/BaseTestClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/XUnitExamples/Base/BaseTestClass.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +23,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b8b10b8247cb413eab5175c26a5956a755a8/64/bd816e7f/ITestOutputHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/10616addb6e783cc90acec53f9316ccec363cf7a57b27055a964beafd4b32d95/ArgumentNullException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d08cf4fe6c8616dab4c140d3a928b5d120d4119319ee4f2c28285d654ca607a/EntityEntry.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -50,30 +45,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/inmetadeveloper/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
-      "/Users/inmetadeveloper/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
-      "/Users/inmetadeveloper/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/inmetadeveloper/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/inmetadeveloper/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/inmetadeveloper/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -91,7 +86,8 @@
       <workItem from="1690966309627" duration="5001000" />
       <workItem from="1690977187370" duration="4619000" />
       <workItem from="1691046542646" duration="5564000" />
-      <workItem from="1691062284437" duration="2156000" />
+      <workItem from="1691062284437" duration="2445000" />
+      <workItem from="1691133756527" duration="1410000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -149,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691052940356</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update">
+      <option name="closed" value="true" />
+      <created>1691065128610</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691065128610</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

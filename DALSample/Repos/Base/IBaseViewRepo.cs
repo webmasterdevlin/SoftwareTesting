@@ -1,6 +1,6 @@
 ﻿namespace DALSample.Repos.Base;
 
-public interface IBaseViewRepo<T> : IDisposable where T : class, new()
+public interface IBaseViewRepo<out T> : IDisposable where T : class, new()
 {
     ApplicationDbContext Context { get; }
     IEnumerable<T> ExecuteSqlString(string sql);
